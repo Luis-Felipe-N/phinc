@@ -1,4 +1,5 @@
-public record UserRequest(
+
+public record RegisterRequest(
     string Name,
     string Email,
     string Password

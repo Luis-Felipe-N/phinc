@@ -5,9 +5,11 @@ using System.Threading.Tasks;
 
 public class User
 {
-    public User(string name)
+    public User(string name, string email, string passwordHash)
     {
         Name = name;
+        Email = email;
+        PasswordHash = passwordHash;
         Id = Guid.NewGuid();
     }
     public Guid Id { get; set; }
